@@ -1,0 +1,51 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd 		
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx.xsd 
+		http://www.springframework.org/schema/data/jpa
+    http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd"
+	default-lazy-init="true">
+
+	<bean class="com.dscomm.common.cloud.RestClientImpl"></bean>
+
+	<bean id="LoadBalancedAdvices" class="com.dscomm.common.cloud.aop.LoadBalancedAdvices"></bean>
+
+	<!-- <context:annotation-config /> <bean class="org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration" 
+		/> <bean class="com.dscomm.common.cloud.aop.RootConfigure" /> -->
+	<!-- <context:component-scan base-package="com.dscomm.common.**"></context:component-scan> -->
+
+
+
+	<!-- <bean id="LoadBalancedInterceptor" class="com.dscomm.common.cloud.aop.LoadBalancedInterceptor"></bean>
+	<aop:config proxy-target-class="true">
+		<aop:aspect ref="LoadBalancedAdvices">
+			<aop:pointcut expression="execution(* *.*(..)) and args(..)"
+				id="register" />
+			<aop:before method="before" pointcut-ref="register" />
+		</aop:aspect>
+	</aop:config>
+	<bean id="myService" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="interceptorNames">
+			<list>
+				<value>LoadBalancedInterceptor</value>
+			</list>
+		</property>
+		<property name="target">
+			<ref bean="RestTemplate" />
+		</property>
+	</bean> -->
+
+
+
+
+
+</beans>
