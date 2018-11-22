@@ -1,0 +1,182 @@
+2018-03-20 17:21:51,128 DEBUG [1] [DS.AFP.Common.Core.LoggerFacade] [Debug] [WpfAddinApp 服务已经创建并开始Run，该服务路径：D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Bin\BizApp\DS_AFP-N\DS.AFP.WindowsService.App.exe]
+2018-03-20 17:21:52,269 INFO  [7] [DS.AFP.Common.Core.LoggerFacade] [Info] [服务“WpfAddinApp”启动开始]
+2018-03-20 17:21:52,753 INFO  [7] [DS.AFP.Common.Core.LoggerFacade] [Info] [----------------------------------------------------------------------------]
+2018-03-20 17:21:53,003 INFO  [7] [DS.AFP.Common.Core.LoggerFacade] [Info] [Platform began to load and initialize each plug-in]
+2018-03-20 17:21:53,159 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Log creation success.]
+2018-03-20 17:21:53,159 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Create the module directory to start.]
+2018-03-20 17:21:53,206 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Create module directory end.]
+2018-03-20 17:21:53,206 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Configuration module directory.]
+2018-03-20 17:21:53,206 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Configuration module directory end.]
+2018-03-20 17:21:53,206 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Pre initialization module.]
+2018-03-20 17:21:57,175 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [End of pre initialization module.]
+2018-03-20 17:21:57,175 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Create the Spring container to start.]
+2018-03-20 17:21:57,269 DEBUG [7] [Spring.Context.Support.ContextHandler] [Create] [creating context 'spring.root']
+2018-03-20 17:21:57,832 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [ApplicationContext Refresh: Refreshing object factory ]
+2018-03-20 17:21:58,598 DEBUG [7] [Spring.Objects.Factory.Xml.XmlObjectDefinitionReader] [LoadObjectDefinitions] [Loading XML object definitions from config [D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Bin\BizApp\DS_AFP-N\DS.AFP.WindowsService.App.exe.Config#spring/objects]]
+2018-03-20 17:21:59,879 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [Spring.Data.Config.DatabaseNamespaceParser] using constructor [Void .ctor()]]
+2018-03-20 17:21:59,941 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [Spring.Transaction.Config.TxNamespaceParser] using constructor [Void .ctor()]]
+2018-03-20 17:22:00,113 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [Spring.Aop.Config.AopNamespaceParser] using constructor [Void .ctor()]]
+2018-03-20 17:22:00,379 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [DS.AFP.Communication.WCF.Config.WcfNamespaceParser] using constructor [Void .ctor()]]
+2018-03-20 17:22:00,629 DEBUG [7] [Spring.Objects.Factory.Xml.XmlObjectDefinitionReader] [CreateValidatingReader] [Using the following XmlReader implementation : System.Xml.XsdValidatingReader]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader] [RegisterObjectDefinitions] [Loading object definitions.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Loading object definitions...]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default lazy init ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default dependency check ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default autowire ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default merge ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default init method ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default destroy method ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default autowire candidates ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default init method ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.ObjectDefinitionParserHelper] [InitDefaults] [Default destroy method ''.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Xml.DefaultObjectDefinitionDocumentReader] [RegisterObjectDefinitions] [Found 0 <object> elements defining objects.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectDefinitionReader] [LoadObjectDefinitions] [Loaded 0 object definitions from location [config://spring/objects]]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Context.Support.AbstractXmlApplicationContext] [RefreshObjectFactory] [Refreshed ObjectFactory for application context 'spring.root'.]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [ApplicationContext Refresh: Registering well-known processors and objects]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [ApplicationContext Refresh: Custom post processing object factory]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [ApplicationContext Refresh: Post processing object factory using pre-registered processors]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [No objects defined in application context [spring.root].]
+2018-03-20 17:22:00,676 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [ApplicationContext Refresh: Post processing object factory using defined processors]
+2018-03-20 17:22:00,863 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [InvokeObjectFactoryPostProcessors] [processed 0 IFactoryObjectPostProcessors defined in application context [spring.root].]
+2018-03-20 17:22:00,863 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [RegisterObjectPostProcessors] [processed 0 IObjectPostProcessors defined in application context [spring.root].]
+2018-03-20 17:22:00,910 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [InitEventRegistry] [No IEventRegistry found with name 'eventRegistry' : using default 'Spring.Objects.Events.Support.EventRegistry'.]
+2018-03-20 17:22:00,941 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [InitMessageSource] [No IMessageSource found with name 'messageSource' : using default 'StaticMessageSource : '.]
+2018-03-20 17:22:00,941 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [ApplicationContext Refresh: Preinstantiating singletons]
+2018-03-20 17:22:00,941 DEBUG [7] [Spring.Objects.Factory.Support.DefaultListableObjectFactory] [PreInstantiateSingletons] [Pre-instantiating singletons in factory [Spring.Objects.Factory.Support.DefaultListableObjectFactory]]
+2018-03-20 17:22:00,941 DEBUG [7] [Spring.Context.Support.AbstractApplicationContext] [PublishEvent] [Publishing event in context [spring.root] : ContextRefreshedEventArgs [Refreshed]]
+2018-03-20 17:22:00,941 INFO  [7] [Spring.Context.Support.AbstractApplicationContext] [Refresh] [ApplicationContext Refresh: Completed]
+2018-03-20 17:22:00,941 DEBUG [7] [Spring.Context.Support.ContextRegistry] [RegisterContext] [Registering context 'Spring.Context.Support.XmlApplicationContext' under name 'spring.root'.]
+2018-03-20 17:22:00,941 DEBUG [7] [Spring.Context.Support.ContextHandler] [Create] [context 'Spring.Context.Support.XmlApplicationContext' created for name 'spring.root']
+2018-03-20 17:22:00,941 DEBUG [7] [Spring.Context.Support.ContextRegistry] [GetContext] [Returning context 'Spring.Context.Support.XmlApplicationContext' registered under name 'spring.root'.]
+2018-03-20 17:22:00,941 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Create Spring container end.]
+2018-03-20 17:22:00,988 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Configure Spring container to start.]
+2018-03-20 17:22:01,160 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Configure the container to start running.]
+2018-03-20 17:22:01,176 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Configuration container end run.]
+2018-03-20 17:22:01,176 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Configure Spring container end.]
+2018-03-20 17:22:01,176 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [The allocation of the singleton service loader to start.]
+2018-03-20 17:22:01,176 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [The allocation of the singleton service end loader.]
+2018-03-20 17:22:01,176 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Register frame exception type start.]
+2018-03-20 17:22:01,176 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [The end of the abnormal type of registration framework.]
+2018-03-20 17:22:01,176 DEBUG [7] [DS.AFP.Common.Core.LoggerFacade] [Debug] [Initialization module.]
+2018-03-20 17:22:01,191 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: obtaining instance for name IModuleManager => canonical name IModuleManager]
+2018-03-20 17:22:01,270 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Creating shared instance of singleton object 'IModuleManager']
+2018-03-20 17:22:01,270 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Creating instance of Object 'IModuleManager' with merged definition [RootObjectDefinition : Class [DS.AFP.Framework.Modularity.ModuleManager]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = Constructor; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ].]
+2018-03-20 17:22:01,270 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInstantiation] [Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'IModuleManager'.]
+2018-03-20 17:22:01,301 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: obtaining instance for name IModuleInitializer => canonical name IModuleInitializer]
+2018-03-20 17:22:01,332 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Creating shared instance of singleton object 'IModuleInitializer']
+2018-03-20 17:22:01,332 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Creating instance of Object 'IModuleInitializer' with merged definition [RootObjectDefinition : Class [DS.AFP.Framework.Modularity.ModuleInitializer]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = Constructor; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ].]
+2018-03-20 17:22:01,332 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInstantiation] [Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'IModuleInitializer'.]
+2018-03-20 17:22:01,332 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [         GetObjectInternal: obtaining instance for name IServiceLocator => canonical name IServiceLocator]
+2018-03-20 17:22:01,332 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [Returning cached instance of singleton object 'IServiceLocator'.]
+2018-03-20 17:22:01,348 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'IServiceLocator'.]
+2018-03-20 17:22:01,348 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: returning instance for objectname IServiceLocator]
+2018-03-20 17:22:01,363 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [         GetObjectInternal: obtaining instance for name ILoggerFacade => canonical name ILoggerFacade]
+2018-03-20 17:22:01,363 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [Returning cached instance of singleton object 'ILoggerFacade'.]
+2018-03-20 17:22:01,363 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'ILoggerFacade'.]
+2018-03-20 17:22:01,363 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: returning instance for objectname ILoggerFacade]
+2018-03-20 17:22:01,363 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [CreateArgumentArray] [Autowiring by type from object name 'IModuleInitializer' via constructor to object named 'IServiceLocator']
+2018-03-20 17:22:01,363 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [CreateArgumentArray] [Autowiring by type from object name 'IModuleInitializer' via constructor to object named 'ILoggerFacade']
+2018-03-20 17:22:01,379 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [DS.AFP.Framework.Modularity.ModuleInitializer] using constructor [Void .ctor(Microsoft.Practices.ServiceLocation.IServiceLocator, DS.AFP.Common.Core.ILoggerFacade)]]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [AutowireConstructor] [Object 'IModuleInitializer' instantiated via constructor [Void .ctor(Microsoft.Practices.ServiceLocation.IServiceLocator, DS.AFP.Common.Core.ILoggerFacade)].]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Eagerly caching object 'IModuleInitializer' to allow for resolving potential circular references]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ConfigureObject] [Configuring object using definition 'IModuleInitializer']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInitialization] [Invoking IObjectPostProcessors before initialization of object 'IModuleInitializer']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsAfterInitialization] [Invoking IObjectPostProcessors after initialization of object 'IModuleInitializer']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Cached shared instance of singleton object 'IModuleInitializer']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'IModuleInitializer'.]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: returning instance for objectname IModuleInitializer]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: obtaining instance for name IModuleCatalog => canonical name IModuleCatalog]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [Returning cached instance of singleton object 'IModuleCatalog'.]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'IModuleCatalog'.]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: returning instance for objectname IModuleCatalog]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: obtaining instance for name ILoggerFacade => canonical name ILoggerFacade]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [Returning cached instance of singleton object 'ILoggerFacade'.]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'ILoggerFacade'.]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: returning instance for objectname ILoggerFacade]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [CreateArgumentArray] [Autowiring by type from object name 'IModuleManager' via constructor to object named 'IModuleInitializer']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [CreateArgumentArray] [Autowiring by type from object name 'IModuleManager' via constructor to object named 'IModuleCatalog']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [CreateArgumentArray] [Autowiring by type from object name 'IModuleManager' via constructor to object named 'ILoggerFacade']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [CreateArgumentArray] [Autowiring by type from object name 'IModuleManager' via constructor to object named 'Spring.Context.Support.XmlApplicationContext@EABF06']
+2018-03-20 17:22:01,379 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [DS.AFP.Framework.Modularity.ModuleManager] using constructor [Void .ctor(DS.AFP.Framework.Modularity.IModuleInitializer, DS.AFP.Framework.Modularity.IModuleCatalog, DS.AFP.Common.Core.ILoggerFacade, Spring.Context.IApplicationContext)]]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [AutowireConstructor] [Object 'IModuleManager' instantiated via constructor [Void .ctor(DS.AFP.Framework.Modularity.IModuleInitializer, DS.AFP.Framework.Modularity.IModuleCatalog, DS.AFP.Common.Core.ILoggerFacade, Spring.Context.IApplicationContext)].]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Eagerly caching object 'IModuleManager' to allow for resolving potential circular references]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ConfigureObject] [Configuring object using definition 'IModuleManager']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInitialization] [Invoking IObjectPostProcessors before initialization of object 'IModuleManager']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsAfterInitialization] [Invoking IObjectPostProcessors after initialization of object 'IModuleManager']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Cached shared instance of singleton object 'IModuleManager']
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'IModuleManager'.]
+2018-03-20 17:22:01,379 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [GetObjectInternal: returning instance for objectname IModuleManager]
+2018-03-20 17:22:01,410 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: obtaining instance for name WpfAddinAppModule => canonical name WpfAddinAppModule]
+2018-03-20 17:22:01,551 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Creating shared instance of singleton object 'WpfAddinAppModule']
+2018-03-20 17:22:01,551 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Creating instance of Object 'WpfAddinAppModule' with merged definition [RootObjectDefinition : Class [WpfAddinApp.WpfAddinAppModule]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = Constructor; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ].]
+2018-03-20 17:22:01,551 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInstantiation] [Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'WpfAddinAppModule'.]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: obtaining instance for name IDsConfigurationSection => canonical name IDsConfigurationSection]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [Returning cached instance of singleton object 'IDsConfigurationSection'.]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'IDsConfigurationSection'.]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: returning instance for objectname IDsConfigurationSection]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: obtaining instance for name ILoadingManage => canonical name ILoadingManage]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Creating shared instance of singleton object 'ILoadingManage']
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Creating instance of Object 'ILoadingManage' with merged definition [RootObjectDefinition : Class [DS.AFP.Common.Core.Loader.LoadingManage]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = Constructor; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ].]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInstantiation] [Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'ILoadingManage'.]
+2018-03-20 17:22:01,738 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [DS.AFP.Common.Core.Loader.LoadingManage] using constructor [Void .ctor()]]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [AutowireConstructor] [Object 'ILoadingManage' instantiated via constructor [Void .ctor()].]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Eagerly caching object 'ILoadingManage' to allow for resolving potential circular references]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ConfigureObject] [Configuring object using definition 'ILoadingManage']
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInitialization] [Invoking IObjectPostProcessors before initialization of object 'ILoadingManage']
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsAfterInitialization] [Invoking IObjectPostProcessors after initialization of object 'ILoadingManage']
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Cached shared instance of singleton object 'ILoadingManage']
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'ILoadingManage'.]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: returning instance for objectname ILoadingManage]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [      GetObjectInternal: obtaining instance for name IDsEnvironment => canonical name IDsEnvironment]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Creating shared instance of singleton object 'IDsEnvironment']
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Creating instance of Object 'IDsEnvironment' with merged definition [RootObjectDefinition : Class [DS.AFP.Common.Core.DsEnvironment]; Abstract = False; Parent = ; Scope = singleton; Singleton = True; LazyInit = False; Autowire = Constructor; Autowire-Candidate = True; Primary = False; DependencyCheck = None; InitMethodName = ; DestroyMethodName = ; FactoryMethodName = ; FactoryObjectName = ].]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInstantiation] [Invoking IInstantiationAwareObjectPostProcessors before the instantiation of 'IDsEnvironment'.]
+2018-03-20 17:22:01,738 TRACE [7] [Spring.Util.ObjectUtils] [InstantiateType] [instantiating type [DS.AFP.Common.Core.DsEnvironment] using constructor [Void .ctor()]]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.ConstructorResolver] [AutowireConstructor] [Object 'IDsEnvironment' instantiated via constructor [Void .ctor()].]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [InstantiateObject] [Eagerly caching object 'IDsEnvironment' to allow for resolving potential circular references]
+2018-03-20 17:22:01,738 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ConfigureObject] [Configuring object using definition 'IDsEnvironment']
+2018-03-20 17:22:01,754 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsBeforeInitialization] [Invoking IObjectPostProcessors before initialization of object 'IDsEnvironment']
+2018-03-20 17:22:01,754 DEBUG [7] [Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory] [ApplyObjectPostProcessorsAfterInitialization] [Invoking IObjectPostProcessors after initialization of object 'IDsEnvironment']
+2018-03-20 17:22:01,754 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [CreateAndCacheSingletonInstance] [Cached shared instance of singleton object 'IDsEnvironment']
+2018-03-20 17:22:01,754 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectForInstance] [Calling code asked for normal instance for name 'IDsEnvironment'.]
+2018-03-20 17:22:01,754 DEBUG [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [   GetObjectInternal: returning instance for objectname IDsEnvironment]
+2018-03-20 17:22:01,754 ERROR [7] [Spring.Objects.Factory.Support.AbstractObjectFactory] [GetObjectInternal] [GetObjectInternal: error obtaining object WpfAddinAppModule]
+2018-03-20 17:22:01,785 ERROR [7] [DS.AFP.Common.Core.LoggerFacade] [Error] [Error：Container noWpfAddinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null The type, may be due to the plug-in configuration is not correct, please note that the plug-in set the version number and the name of the assembly]
+Microsoft.Practices.ServiceLocation.ActivationException: Activation error occured while trying to get instance of type WpfAddinAppModule, key "" ---> Spring.Objects.Factory.UnsatisfiedDependencyException: Error creating object with name 'WpfAddinAppModule' : Unsatisfied dependency expressed through constructor argument with index 4 of type [DS.AFP.Framework.Regions.IRegionManager] : No unique object of type [DS.AFP.Framework.Regions.IRegionManager] is defined : Unsatisfied dependency of type [DS.AFP.Framework.Regions.IRegionManager]: expected at least 1 matching object to wire the [regionManager] parameter on the constructor of object [WpfAddinAppModule]
+   在 Spring.Objects.Factory.Support.ConstructorResolver.GetConstructorInstantiationInfo(String objectName, RootObjectDefinition rod, ConstructorInfo[] chosenCtors, Object[] explicitArgs)
+   在 Spring.Objects.Factory.Support.ConstructorResolver.AutowireConstructor(String objectName, RootObjectDefinition rod, ConstructorInfo[] chosenCtors, Object[] explicitArgs)
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.AutowireConstructor(String name, RootObjectDefinition definition, ConstructorInfo[] ctors, Object[] explicitArgs)
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.CreateObjectInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments)
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure)
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments)
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure)
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObject(String name)
+   在 Spring.Context.Support.AbstractApplicationContext.GetObject(String name)
+   在 DS.AFP.Framework.SpringServiceLocatorAdapter.TryResolve(Type type, String key) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework.Spring\Container\SpringServiceLocatorAdapter.cs:行号 57
+   在 DS.AFP.Framework.SpringServiceLocatorAdapter.DoGetInstance(Type serviceType, String key) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework.Spring\Container\SpringServiceLocatorAdapter.cs:行号 33
+   在 Microsoft.Practices.ServiceLocation.ServiceLocatorImplBase.GetInstance(Type serviceType, String key)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Microsoft.Practices.ServiceLocation.ServiceLocatorImplBase.GetInstance(Type serviceType, String key)
+   在 Microsoft.Practices.ServiceLocation.ServiceLocatorImplBase.GetInstance(Type serviceType)
+   在 DS.AFP.Framework.Modularity.ModuleInitializer.CreateModule(String typeName) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework\Modularity\ModuleInitializer.cs:行号 143
+2018-03-20 17:22:02,004 ERROR [7] [DS.AFP.Common.Core.LoggerFacade] [Error] [DS.AFP.Framework.Modularity.ModuleNotFoundException: Error：Container noWpfAddinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null The type, may be due to the plug-in configuration is not correct, please note that the plug-in set the version number and the name of the assembly ---> Microsoft.Practices.ServiceLocation.ActivationException: Activation error occured while trying to get instance of type WpfAddinAppModule, key "" ---> Spring.Objects.Factory.UnsatisfiedDependencyException: Error creating object with name 'WpfAddinAppModule' : Unsatisfied dependency expressed through constructor argument with index 4 of type [DS.AFP.Framework.Regions.IRegionManager] : No unique object of type [DS.AFP.Framework.Regions.IRegionManager] is defined : Unsatisfied dependency of type [DS.AFP.Framework.Regions.IRegionManager]: expected at least 1 matching object to wire the [regionManager] parameter on the constructor of object [WpfAddinAppModule]
+   在 Spring.Objects.Factory.Support.ConstructorResolver.GetConstructorInstantiationInfo(String objectName, RootObjectDefinition rod, ConstructorInfo[] chosenCtors, Object[] explicitArgs)
+   在 Spring.Objects.Factory.Support.ConstructorResolver.AutowireConstructor(String objectName, RootObjectDefinition rod, ConstructorInfo[] chosenCtors, Object[] explicitArgs)
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.AutowireConstructor(String name, RootObjectDefinition definition, ConstructorInfo[] ctors, Object[] explicitArgs)
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.CreateObjectInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments)
+   在 Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure)
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments)
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure)
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.GetObject(String name)
+   在 Spring.Context.Support.AbstractApplicationContext.GetObject(String name)
+   在 DS.AFP.Framework.SpringServiceLocatorAdapter.TryResolve(Type type, String key) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework.Spring\Container\SpringServiceLocatorAdapter.cs:行号 57
+   在 DS.AFP.Framework.SpringServiceLocatorAdapter.DoGetInstance(Type serviceType, String key) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework.Spring\Container\SpringServiceLocatorAdapter.cs:行号 33
+   在 Microsoft.Practices.ServiceLocation.ServiceLocatorImplBase.GetInstance(Type serviceType, String key)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Microsoft.Practices.ServiceLocation.ServiceLocatorImplBase.GetInstance(Type serviceType, String key)
+   在 Microsoft.Practices.ServiceLocation.ServiceLocatorImplBase.GetInstance(Type serviceType)
+   在 DS.AFP.Framework.Modularity.ModuleInitializer.CreateModule(String typeName) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework\Modularity\ModuleInitializer.cs:行号 143
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DS.AFP.Framework.Modularity.ModuleInitializer.CreateModule(String typeName) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework\Modularity\ModuleInitializer.cs:行号 150
+   在 DS.AFP.Framework.Modularity.ModuleInitializer.CreateModule(ModuleInfo moduleInfo) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework\Modularity\ModuleInitializer.cs:行号 126
+   在 DS.AFP.Framework.Modularity.ModuleInitializer.Initialize(ModuleInfo moduleInfo) 位置 D:\WorkSpace\DS.AFP-N\Trunk\DS.AFP-N\Source\BizApp\DS_AFP-N\DS.AFP.Framework\Modularity\ModuleInitializer.cs:行号 65]

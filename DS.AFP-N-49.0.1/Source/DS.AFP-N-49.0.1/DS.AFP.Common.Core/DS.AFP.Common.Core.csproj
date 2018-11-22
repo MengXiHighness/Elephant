@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{519F7AD2-AE87-4D5C-AAA1-7F69635581B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DS.AFP.Common.Core</RootNamespace>
+    <AssemblyName>DS.AFP.Common.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DS.Common.Logging">
+      <HintPath>..\DS.AFP.Lib\Log4net\V1.0\DS.Common.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\DS.AFP.Lib\Common\Ionic.Zip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Newtonsoft.Json\V5.0.8\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Spring.Core, Version=1.3.2.40001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Spring.net\V1.0\Spring.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TinyMapper">
+      <HintPath>..\..\..\Bin\BizApp\DS_AFP-N\Libs\TinyMapper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\IPortalSection.cs" />
+    <Compile Include="Configuration\PortalSection.cs" />
+    <Compile Include="Configuration\NavigationCollection.cs" />
+    <Compile Include="Configuration\StatusBarCollection.cs" />
+    <Compile Include="Configuration\NavigationElement.cs" />
+    <Compile Include="Configuration\StatusBarElement.cs" />
+    <Compile Include="Configuration\ThemeElement.cs" />
+    <Compile Include="Configuration\ThemeCollection.cs" />
+    <Compile Include="Configuration\ToolBarCollection.cs" />
+    <Compile Include="Configuration\ToolBarElement.cs" />
+    <Compile Include="Configuration\ThemelSection.cs" />
+    <Compile Include="Environment\AddinInfo.cs" />
+    <Compile Include="Configuration\CommunicationElement.cs" />
+    <Compile Include="Configuration\CommunicationsCollection.cs" />
+    <Compile Include="Configuration\ConfigurationFileNotExistException.cs" />
+    <Compile Include="Configuration\ConfigurationItem.cs" />
+    <Compile Include="Configuration\ConnectionElement.cs" />
+    <Compile Include="Configuration\ConnectionsCollection.cs" />
+    <Compile Include="Configuration\DsConfigurationSection.cs" />
+    <Compile Include="Configuration\IDsConfigurationManager.cs" />
+    <Compile Include="Configuration\IDsConfigurationSection.cs" />
+    <Compile Include="Configuration\IWindowsServiceConfigurationSection.cs" />
+    <Compile Include="Configuration\ModuleConfigurationElement.cs" />
+    <Compile Include="Configuration\ModuleDependencyCollection.cs" />
+    <Compile Include="Configuration\ModuleDependencyConfigurationElement.cs" />
+    <Compile Include="Configuration\ModulesCollection.cs" />
+    <Compile Include="Configuration\ParamElement.cs" />
+    <Compile Include="Configuration\ParamsCollection.cs" />
+    <Compile Include="Configuration\DsConfigurationManager.cs" />
+    <Compile Include="Configuration\WindowsServiceConfigurationElement.cs" />
+    <Compile Include="Configuration\WindowsServiceConfigurationSection.cs" />
+    <Compile Include="Configuration\IDsAddinConfigurationSection.cs" />
+    <Compile Include="Configuration\DsAddinConfigurationSection.cs" />
+    <Compile Include="Dynamic\DynamicType.cs" />
+    <Compile Include="Environment\SyncInfo.cs" />
+    <Compile Include="Exception\AddinException.cs" />
+    <Compile Include="Exception\AddinException.Extension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exception\AFPException.cs" />
+    <Compile Include="Exception\DsExceptionHandler.cs" />
+    <Compile Include="Exception\ExceptionMessage.cs" />
+    <Compile Include="Exception\AFPException.Extension.cs" />
+    <Compile Include="Exception\IExceptionHandler.cs" />
+    <Compile Include="Extensions\DataAdapterExtensions 备份.cs" />
+    <Compile Include="Extensions\DataAdapterExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\IntConvertExtensions.cs" />
+    <Compile Include="Extensions\SerializeExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Extensions\XmlExtensioins.cs" />
+    <Compile Include="Environment\IDsEnvironment.cs" />
+    <Compile Include="File\FileDb.cs" />
+    <Compile Include="File\FileHandler.cs" />
+    <Compile Include="File\FileStore.cs" />
+    <Compile Include="File\HandlerSkeleton.cs" />
+    <Compile Include="File\IFileDb.cs" />
+    <Compile Include="File\IHandler.cs" />
+    <Compile Include="File\IOptionHandler.cs" />
+    <Compile Include="File\NullSecurityContext.cs" />
+    <Compile Include="File\PersistentData.cs" />
+    <Compile Include="File\QuietTextWriter.cs" />
+    <Compile Include="File\ReaderWriterLock.cs" />
+    <Compile Include="File\ReusableStringWriter.cs" />
+    <Compile Include="File\SecurityContext.cs" />
+    <Compile Include="File\SecurityContextProvider.cs" />
+    <Compile Include="File\SessionHandlerCollection.cs" />
+    <Compile Include="File\TextReaderAdapter.cs" />
+    <Compile Include="File\TextWriterAdapter.cs" />
+    <Compile Include="File\TextWriterHandler.cs" />
+    <Compile Include="GlobalParams.cs" />
+    <Compile Include="Loader\AssemblyCache.cs" />
+    <Compile Include="Loader\AssemblyInfo.cs" />
+    <Compile Include="Loader\AssemblyLoader.cs" />
+    <Compile Include="Loader\AssemblyResolver.cs" />
+    <Compile Include="Loader\IAssemblyResolver.cs" />
+    <Compile Include="Loader\ILoadingManage.cs" />
+    <Compile Include="Loader\LoadingManage.cs" />
+    <Compile Include="Log\LogTrace\LogTraceClient.cs" />
+    <Compile Include="Log\LogTrace\Proxy\Constants.cs" />
+    <Compile Include="Log\LogTrace\Proxy\DynamicObject.cs" />
+    <Compile Include="Log\LogTrace\Proxy\DynamicProxy.cs" />
+    <Compile Include="Log\LogTrace\Proxy\DynamicProxyException.cs" />
+    <Compile Include="Log\LogTrace\Proxy\DynamicProxyFactory.cs" />
+    <Compile Include="Log\LogTrace\Proxy\DynamicProxyFactoryOptions.cs" />
+    <Compile Include="Log\ILoggerFacade.cs" />
+    <Compile Include="Log\LoggerFacade.cs" />
+    <Compile Include="Log\LoggerFacadeBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflect\ConstructorInvoker.cs" />
+    <Compile Include="Reflect\ConstructorInvokerCache.cs" />
+    <Compile Include="Reflect\ConstructorInvokerFactory.cs" />
+    <Compile Include="Reflect\FastReflectionCache.cs" />
+    <Compile Include="Reflect\FastReflectionCaches.cs" />
+    <Compile Include="Reflect\FastReflectionExtensions.cs" />
+    <Compile Include="Reflect\FastReflectionFactories.cs" />
+    <Compile Include="Reflect\FieldAccessor.cs" />
+    <Compile Include="Reflect\FieldAccessorCache.cs" />
+    <Compile Include="Reflect\FieldAccessorFactory.cs" />
+    <Compile Include="Reflect\IFastReflectionCache.cs" />
+    <Compile Include="Reflect\IFastReflectionFactory.cs" />
+    <Compile Include="Reflect\MethodInvoker.cs" />
+    <Compile Include="Reflect\MethodInvokerCache.cs" />
+    <Compile Include="Reflect\MethodInvokerFactory.cs" />
+    <Compile Include="Reflect\PropertyAccessor.cs" />
+    <Compile Include="Reflect\PropertyAccessorCache.cs" />
+    <Compile Include="Reflect\PropertyAccessorFactory.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CultureManager.cs" />
+    <Compile Include="Resource\Cultures.cs" />
+    <Compile Include="Resource\IResource.cs" />
+    <Compile Include="Resource\IResourceProvider.cs" />
+    <Compile Include="Resource\ResManager.cs" />
+    <Compile Include="Resource\Resource.cs" />
+    <Compile Include="Resource\XmlProvider.cs" />
+    <Compile Include="SafeCollections\SynchronizedDictionaryEnumerator.cs" />
+    <Compile Include="SafeCollections\SynchronizedEnumerator.cs" />
+    <Compile Include="SafeCollections\SynchronizedHashtable.cs" />
+    <Compile Include="SafeCollections\SynchronizedSet.cs" />
+    <Compile Include="Configuration\GlobalParams.cs" />
+    <Compile Include="SafeCollections\ThreadSafeDictionary.cs" />
+    <Compile Include="Utility\AESHelper.cs" />
+    <Compile Include="Utility\CacheHelper.cs" />
+    <Compile Include="Utility\CmdHelper.cs" />
+    <Compile Include="Utility\ConfigurationFileHelper.cs" />
+    <Compile Include="Utility\DBConvertHelper.cs" />
+    <Compile Include="Environment\DsEnvironment.cs" />
+    <Compile Include="Utility\FileHelper.cs" />
+    <Compile Include="Utility\FullScreenHelper.cs" />
+    <Compile Include="Utility\LockHelper.cs" />
+    <Compile Include="Utility\LookupTreeHelper.cs" />
+    <Compile Include="Utility\NetHelper.cs" />
+    <Compile Include="Utility\PathHelper.cs" />
+    <Compile Include="Utility\ProcessUtility.cs" />
+    <Compile Include="Utility\RegisterHelp.cs" />
+    <Compile Include="Utility\ResourceHelper\Accelerator.cs" />
+    <Compile Include="Utility\ResourceHelper\AcceleratorResource.cs" />
+    <Compile Include="Utility\ResourceHelper\BitmapFile.cs" />
+    <Compile Include="Utility\ResourceHelper\BitmapResource.cs" />
+    <Compile Include="Utility\ResourceHelper\CursorDirectoryResource.cs" />
+    <Compile Include="Utility\ResourceHelper\CursorResource.cs" />
+    <Compile Include="Utility\ResourceHelper\DeviceIndependentBitmap.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogExTemplate.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogExTemplateControl.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogResource.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogTemplate.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogTemplateBase.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogTemplateControl.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogTemplateControlBase.cs" />
+    <Compile Include="Utility\ResourceHelper\DialogTemplateUtil.cs" />
+    <Compile Include="Utility\ResourceHelper\DirectoryResource.cs" />
+    <Compile Include="Utility\ResourceHelper\FixedFileInfo.cs" />
+    <Compile Include="Utility\ResourceHelper\FontDirectoryEntry.cs" />
+    <Compile Include="Utility\ResourceHelper\FontDirectoryResource.cs" />
+    <Compile Include="Utility\ResourceHelper\FontResource.cs" />
+    <Compile Include="Utility\ResourceHelper\Gdi32.cs" />
+    <Compile Include="Utility\ResourceHelper\GenericResource.cs" />
+    <Compile Include="Utility\ResourceHelper\IconDirectoryResource.cs" />
+    <Compile Include="Utility\ResourceHelper\IconFile.cs" />
+    <Compile Include="Utility\ResourceHelper\IconFileIcon.cs" />
+    <Compile Include="Utility\ResourceHelper\IconImageResource.cs" />
+    <Compile Include="Utility\ResourceHelper\IconResource.cs" />
+    <Compile Include="Utility\ResourceHelper\Kernel32.cs" />
+    <Compile Include="Utility\ResourceHelper\LoadException.cs" />
+    <Compile Include="Utility\ResourceHelper\ManifestResource.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuExTemplate.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuExTemplateItem.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuExTemplateItemCollection.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuExTemplateItemCommand.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuExTemplateItemPopup.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuResource.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuTemplate.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuTemplateBase.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuTemplateItem.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuTemplateItemCollection.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuTemplateItemCommand.cs" />
+    <Compile Include="Utility\ResourceHelper\MenuTemplateItemPopup.cs" />
+    <Compile Include="Utility\ResourceHelper\Resource.cs" />
+    <Compile Include="Utility\ResourceHelper\ResourceId.cs" />
+    <Compile Include="Utility\ResourceHelper\ResourceInfo.cs" />
+    <Compile Include="Utility\ResourceHelper\ResourceTableHeader.cs" />
+    <Compile Include="Utility\ResourceHelper\ResourceUtil.cs" />
+    <Compile Include="Utility\ResourceHelper\StringFileInfo.cs" />
+    <Compile Include="Utility\ResourceHelper\StringResource.cs" />
+    <Compile Include="Utility\ResourceHelper\StringTable.cs" />
+    <Compile Include="Utility\ResourceHelper\StringTableEntry.cs" />
+    <Compile Include="Utility\ResourceHelper\User32.cs" />
+    <Compile Include="Utility\ResourceHelper\VarFileInfo.cs" />
+    <Compile Include="Utility\ResourceHelper\VarTable.cs" />
+    <Compile Include="Utility\ResourceHelper\VersionResource.cs" />
+    <Compile Include="Utility\ResourceHelper\Winver.cs" />
+    <Compile Include="Utility\SecurityHelper.cs" />
+    <Compile Include="Utility\UIThreadHelper.cs" />
+    <Compile Include="Utility\XmlHelper.cs" />
+    <Compile Include="Utility\ZipHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

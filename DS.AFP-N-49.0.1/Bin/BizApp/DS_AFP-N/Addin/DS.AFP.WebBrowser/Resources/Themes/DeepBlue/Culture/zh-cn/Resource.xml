@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res>
+  <item key="sysName" type="string"  des="系统名称" value="DS融合终端"/>
+  <item key="version" type="string"  des="系统版本" value="v 1.0.0"/>  
+  
+  <item key="Close" type="string"  des="退出客户端" value="关闭"/>
+  <item key="About" type="string"  des="关于" value="关于"/>
+</res>
+

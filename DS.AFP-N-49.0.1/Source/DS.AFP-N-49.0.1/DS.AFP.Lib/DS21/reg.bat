@@ -1,0 +1,1 @@
+regsvr64 DSSPH.ocx

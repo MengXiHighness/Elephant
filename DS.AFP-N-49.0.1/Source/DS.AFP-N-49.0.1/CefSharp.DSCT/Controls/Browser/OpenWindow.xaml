@@ -1,0 +1,36 @@
+﻿<Window x:Class="CefSharp.DSCT.OpenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CefSharp.DSCT.Browser"
+        mc:Ignorable="d" WindowStyle="SingleBorderWindow"   
+        Title="OpenWindow" Height="600" Width="800">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" BorderBrush="#FFBFBEBE" BorderThickness="0,0,0,1" Name="move" Height="35"  Background="Transparent" VerticalAlignment="Top">
+                </Border>
+                <Label Name="ltitle" HorizontalAlignment="Left" VerticalAlignment="Center" Content="" Background="#00000000" Foreground="#FF3C3C3C" FontSize="14" />
+                <WrapPanel Grid.Row="0" HorizontalAlignment="Right" Height="{Binding ElementName=move,Path=Height}" VerticalAlignment="Top">
+                    <Border Height="34" Width="40" Name="border_Minimized" Cursor="Hand">
+                        <Image Name="img_Minimized" Source="images/zxh.png" Stretch="None" VerticalAlignment="Center" />
+                    </Border>
+                    <Border Height="34" Width="40" Name="border_Maximized" Cursor="Hand">
+                        <Image Name="img_Maximized" Source="images/zdh.png" Stretch="None"  VerticalAlignment="Center" />
+                    </Border>
+                    <Border Height="34" Width="40" Name="border_Close" Cursor="Hand">
+                        <Image Name="img_Close" Source="images/gb.png" Stretch="None"  VerticalAlignment="Center" />
+                    </Border>
+                </WrapPanel>
+                <Grid Name="grid" Grid.Row="1">
+
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C2AEC49-E6A2-4615-83A5-1F10BC47769B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DS.AFP.Communication</RootNamespace>
+    <AssemblyName>DS.AFP.Communication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DS.Common.Logging, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Log4net\V1.0\DS.Common.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DS.Log4Net, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Log4net\V1.0\DS.Log4Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Newtonsoft.Json\V5.0.8\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\Bin\BizApp\DS_AFP-N\Libs\RestSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.2.40001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Spring.net\V1.0\Spring.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Services, Version=1.3.2.40001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Spring.net\V1.0\Spring.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DS21\DSMagParams.cs" />
+    <Compile Include="DS21\Model\DSMsg.cs" />
+    <Compile Include="DS21\Model\DstNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DS21\GlobalParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DS21\IDS21.cs" />
+    <Compile Include="DS21\MsgEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DS21\Model\MsgBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DS21\Model\MsgHead.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DS21\Model\MsgNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DS21\OldStringFormartEventArgs.cs" />
+    <Compile Include="DS21\Model\SrcNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DS21\PlainStringFormartEventArgs.cs" />
+    <Compile Include="FTP\Extensions\GetChecksum.cs" />
+    <Compile Include="FTP\Extensions\MD5.cs" />
+    <Compile Include="FTP\Extensions\XCRC.cs" />
+    <Compile Include="FTP\Extensions\XMD5.cs" />
+    <Compile Include="FTP\Extensions\XSHA1.cs" />
+    <Compile Include="FTP\Extensions\XSHA256.cs" />
+    <Compile Include="FTP\Extensions\XSHA512.cs" />
+    <Compile Include="FTP\FtpClient.cs" />
+    <Compile Include="FTP\FtpDataStream.cs" />
+    <Compile Include="FTP\FtpEnums.cs" />
+    <Compile Include="FTP\FtpExceptions.cs" />
+    <Compile Include="FTP\FtpExtensionAttribute.cs" />
+    <Compile Include="FTP\FtpExtensions.cs" />
+    <Compile Include="FTP\FtpHash.cs" />
+    <Compile Include="FTP\FtpListItem.cs" />
+    <Compile Include="FTP\FtpReply.cs" />
+    <Compile Include="FTP\FtpSocketStream.cs" />
+    <Compile Include="FTP\FtpTrace.cs" />
+    <Compile Include="FTP\IFtpClient.cs" />
+    <Compile Include="FTP\IFtpListItem.cs" />
+    <Compile Include="FTP\IFtpReply.cs" />
+    <Compile Include="Http\Http\Converters\Json\NJsonHttpMessageConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolType.cs" />
+    <Compile Include="Http\Collections\Specialized\NameValueCollection.cs" />
+    <Compile Include="Http\Http\Client\ClientHttpRequestCompletedEventArgs.cs" />
+    <Compile Include="Http\Http\Client\IClientHttpRequest.cs" />
+    <Compile Include="Http\Http\Client\IClientHttpRequestFactory.cs" />
+    <Compile Include="Http\Http\Client\IClientHttpResponse.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\BasicSigningRequestInterceptor.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestAsyncExecution.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestAsyncInterceptor.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestBeforeInterceptor.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestContext.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestFactoryCreation.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestFactoryInterceptor.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestInterceptor.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestSyncExecution.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpRequestSyncInterceptor.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\IClientHttpResponseAsyncContext.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\InterceptingClientHttpRequest.cs" />
+    <Compile Include="Http\Http\Client\Interceptor\InterceptingClientHttpRequestFactory.cs" />
+    <Compile Include="Http\Http\Client\WebClientHttpRequest.cs" />
+    <Compile Include="Http\Http\Client\WebClientHttpRequestFactory.cs" />
+    <Compile Include="Http\Http\Client\WebClientHttpResponse.cs" />
+    <Compile Include="Http\Http\Converters\AbstractHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\ByteArrayHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Feed\AbstractFeedHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Feed\Atom10FeedHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Feed\Rss20FeedHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\FileInfoHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\FormHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\HttpMessageConversionException.cs" />
+    <Compile Include="Http\Http\Converters\HttpMessageNotReadableException.cs" />
+    <Compile Include="Http\Http\Converters\HttpMessageNotWritableException.cs" />
+    <Compile Include="Http\Http\Converters\IHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Json\DataContractJsonHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Json\JsonHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Json\SpringJsonHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\ResourceHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\StringHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Xml\AbstractXmlHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Xml\DataContractHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Xml\XElementHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Xml\XmlDocumentHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\Converters\Xml\XmlSerializableHttpMessageConverter.cs" />
+    <Compile Include="Http\Http\HttpEntity.cs" />
+    <Compile Include="Http\Http\HttpHeaders.cs" />
+    <Compile Include="Http\Http\HttpMethod.cs" />
+    <Compile Include="Http\Http\HttpResponseMessage.cs" />
+    <Compile Include="Http\Http\HttpResponseMessage`1.cs" />
+    <Compile Include="Http\Http\HttpUtils.cs" />
+    <Compile Include="Http\Http\IHttpInputMessage.cs" />
+    <Compile Include="Http\Http\IHttpOutputMessage.cs" />
+    <Compile Include="Http\Http\MediaType.cs" />
+    <Compile Include="Http\IO\AbstractResource.cs" />
+    <Compile Include="Http\IO\AssemblyResource.cs" />
+    <Compile Include="Http\IO\ByteArrayResource.cs" />
+    <Compile Include="Http\IO\FileResource.cs" />
+    <Compile Include="Http\IO\IResource.cs" />
+    <Compile Include="Http\IO\StreamResource.cs" />
+    <Compile Include="Http\Json\IJsonDeserializer.cs" />
+    <Compile Include="Http\Json\IJsonSerializer.cs" />
+    <Compile Include="Http\Json\JsonArray.cs" />
+    <Compile Include="Http\Json\JsonException.cs" />
+    <Compile Include="Http\Json\JsonMapper.cs" />
+    <Compile Include="Http\Json\JsonObject.cs" />
+    <Compile Include="Http\Json\JsonValue.cs" />
+    <Compile Include="Http\Rest\Client\HttpClientErrorException.cs" />
+    <Compile Include="Http\Rest\Client\HttpResponseException.cs" />
+    <Compile Include="Http\Rest\Client\HttpServerErrorException.cs" />
+    <Compile Include="Http\Rest\Client\IRequestCallback.cs" />
+    <Compile Include="Http\Rest\Client\IResponseErrorHandler.cs" />
+    <Compile Include="Http\Rest\Client\IResponseExtractor.cs" />
+    <Compile Include="Http\Rest\Client\IRestOperations.cs" />
+    <Compile Include="Http\Rest\Client\RestClientException.cs" />
+    <Compile Include="Http\Rest\Client\RestOperationCanceler.cs" />
+    <Compile Include="Http\Rest\Client\RestOperationCompletedEventArgs.cs" />
+    <Compile Include="Http\Rest\Client\RestTemplate.cs" />
+    <Compile Include="Http\Rest\Client\Support\AcceptHeaderRequestCallback.cs" />
+    <Compile Include="Http\Rest\Client\Support\AllowHeaderResponseExtractor.cs" />
+    <Compile Include="Http\Rest\Client\Support\DefaultResponseErrorHandler.cs" />
+    <Compile Include="Http\Rest\Client\Support\HeadersResponseExtractor.cs" />
+    <Compile Include="Http\Rest\Client\Support\HttpEntityRequestCallback.cs" />
+    <Compile Include="Http\Rest\Client\Support\HttpMessageResponseExtractor.cs" />
+    <Compile Include="Http\Rest\Client\Support\HttpMessageResponseExtractor`1.cs" />
+    <Compile Include="Http\Rest\Client\Support\LocationHeaderResponseExtractor.cs" />
+    <Compile Include="Http\Rest\Client\Support\MessageConverterResponseExtractor.cs" />
+    <Compile Include="Http\Rest\Client\Support\RestAsyncOperationState.cs" />
+    <Compile Include="Http\Util\ArgumentUtils.cs" />
+    <Compile Include="Http\Util\IoUtils.cs" />
+    <Compile Include="Http\Util\StringUtils.cs" />
+    <Compile Include="Http\Util\UriTemplate.cs" />
+    <Compile Include="Rest\Config\RestFactoryObjectDefinitionParser.cs" />
+    <Compile Include="Rest\Config\RestNamespaceParser.cs" />
+    <Compile Include="Rest\IResponse.cs" />
+    <Compile Include="Rest\IRestClient.cs" />
+    <Compile Include="Rest\Parameter.cs" />
+    <Compile Include="Rest\ParameterType.cs" />
+    <Compile Include="Rest\ResponseStatus.cs" />
+    <Compile Include="Rest\RestClient.cs" />
+    <Compile Include="Rest\RestResonseCookie.cs" />
+    <Compile Include="Rest\RestResponse.cs" />
+    <Compile Include="Socket\HttpServer.cs" />
+    <Compile Include="Socket\HttpSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Socket\Core\Command\HttpCommandBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Socket\Core\Command\ICommandFilterProvider.cs" />
+    <Compile Include="Socket\Core\Config\IRootConfig.Net45.cs" />
+    <Compile Include="Socket\Core\Config\IServerConfig.Net45.cs" />
+    <Compile Include="Socket\Core\Config\RootConfig.Net45.cs" />
+    <Compile Include="Socket\Core\Config\ServerConfig.Net45.cs" />
+    <Compile Include="Socket\Core\IActiveConnector.cs" />
+    <Compile Include="Socket\Core\IStatusInfoSource.cs" />
+    <Compile Include="Socket\Core\ISystemEndPoint.cs" />
+    <Compile Include="Socket\Core\Metadata\AppServerMetadataTypeAttribute.cs" />
+    <Compile Include="Socket\Core\Metadata\CommandFilterAttribute.cs" />
+    <Compile Include="Socket\Core\Metadata\DefaultAppServerMetadata.cs" />
+    <Compile Include="Socket\Core\Metadata\StatusInfoAttribute.cs" />
+    <Compile Include="Socket\Core\Metadata\StatusInfoKeys.cs" />
+    <Compile Include="Socket\Core\NodeStatus.cs" />
+    <Compile Include="Socket\Core\StatusInfoCollection.cs" />
+    <Compile Include="Socket\Engine\AppDomainAppServer.StatusInfo.cs" />
+    <Compile Include="Socket\Engine\AppDomainBootstrap.Net40.cs" />
+    <Compile Include="Socket\Engine\AsyncSocketServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Socket\Engine\AsyncSocketSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Socket\Engine\Configuration\Server.Net45.cs" />
+    <Compile Include="Socket\Engine\Configuration\SocketServiceConfig.Net45.cs" />
+    <Compile Include="Socket\Engine\DefaultBootstrap.Net40.cs" />
+    <Compile Include="Socket\Engine\IExceptionSource.cs" />
+    <Compile Include="Socket\Engine\IPerformanceMonitor.cs" />
+    <Compile Include="Socket\Engine\IProcessServer.cs" />
+    <Compile Include="Socket\Engine\IRemoteWorkItem.cs" />
+    <Compile Include="Socket\Engine\IsolationAppServer.cs" />
+    <Compile Include="Socket\Engine\ProcessAppServer.cs" />
+    <Compile Include="Socket\Engine\ProcessBootstrap.cs" />
+    <Compile Include="Socket\Engine\ProcessLocker.cs" />
+    <Compile Include="Socket\Engine\ProcessPerformanceCounterHelper.cs" />
+    <Compile Include="Socket\Engine\RemoteBootstrapProxy.cs" />
+    <Compile Include="Socket\Engine\ServerTypeMetadata.cs" />
+    <Compile Include="Socket\Engine\SocketSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Socket\Engine\TypeValidator.cs" />
+    <Compile Include="Socket\Facility\PolicyServer\FlashPolicyServer.cs" />
+    <Compile Include="Socket\Facility\PolicyServer\PolicyReceiveFilter.cs" />
+    <Compile Include="Socket\Facility\PolicyServer\PolicyReceiveFilterFactory.cs" />
+    <Compile Include="Socket\Facility\PolicyServer\PolicyServer.cs" />
+    <Compile Include="Socket\Facility\PolicyServer\PolicySession.cs" />
+    <Compile Include="Socket\Facility\PolicyServer\SilverlightPolicyServer.cs" />
+    <Compile Include="Socket\Facility\Protocol\BeginEndMarkReceiveFilter.cs" />
+    <Compile Include="Socket\Facility\Protocol\CountSpliterReceiveFilter.cs" />
+    <Compile Include="Socket\Facility\Protocol\CountSpliterReceiveFilterFactory.cs" />
+    <Compile Include="Socket\Facility\Protocol\FixedHeaderReceiveFilter.cs" />
+    <Compile Include="Socket\Facility\Protocol\FixedSizeReceiveFilter.cs" />
+    <Compile Include="Socket\Facility\Protocol\HttpReceiveFilterBase.cs" />
+    <Compile Include="Socket\Facility\Protocol\HttpRequestInfoBase.cs" />
+    <Compile Include="Socket\Facility\Protocol\MimeHeaderHelper.cs" />
+    <Compile Include="Socket\Protocols\Http\HttpHeaderKey.cs" />
+    <Compile Include="Socket\Protocols\Http\HttpReceiveFilter.cs" />
+    <Compile Include="Socket\Protocols\Http\HttpRequestInfo.cs" />
+    <Compile Include="Socket\GlobalParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Socket\Common\ArraySegmentEx.cs" />
+    <Compile Include="Socket\Common\ArraySegmentList.cs" />
+    <Compile Include="Socket\Common\AssemblyUtil.cs" />
+    <Compile Include="Socket\Common\BinaryUtil.cs" />
+    <Compile Include="Socket\Common\BufferManager.cs" />
+    <Compile Include="Socket\Common\ConfigurationElementBase.cs" />
+    <Compile Include="Socket\Common\ConfigurationExtension.cs" />
+    <Compile Include="Socket\Common\DictionaryExtension.cs" />
+    <Compile Include="Socket\Common\ErrorEventArgs.cs" />
+    <Compile Include="Socket\Common\GenericConfigurationElementCollection.cs" />
+    <Compile Include="Socket\Common\Platform.cs" />
+    <Compile Include="Socket\Common\SearchMarkState.cs" />
+    <Compile Include="Socket\Common\SendingQueue.cs" />
+    <Compile Include="Socket\Common\SmartPool.cs" />
+    <Compile Include="Socket\Common\SocketEx.cs" />
+    <Compile Include="Socket\Common\StringExtension.cs" />
+    <Compile Include="Socket\Common\StringExtension.NET4.cs" />
+    <Compile Include="Socket\Common\TheadPoolEx.cs" />
+    <Compile Include="Socket\Core\AppServer.cs" />
+    <Compile Include="Socket\Core\AppServerBase.cs" />
+    <Compile Include="Socket\Core\AppSession.cs" />
+    <Compile Include="Socket\Core\Async.cs" />
+    <Compile Include="Socket\Core\CommandExecutingContext.cs" />
+    <Compile Include="Socket\Core\Command\CommandBase.cs" />
+    <Compile Include="Socket\Core\Command\CommandInfo.cs" />
+    <Compile Include="Socket\Core\Command\CommandLoaderBase.cs" />
+    <Compile Include="Socket\Core\Command\CommandUpdateEventArgs.cs" />
+    <Compile Include="Socket\Core\Command\CommandUpdateInfo.cs" />
+    <Compile Include="Socket\Core\Command\ICommand.cs" />
+    <Compile Include="Socket\Core\Command\ICommandLoader.cs" />
+    <Compile Include="Socket\Core\Command\ReflectCommandLoader.cs" />
+    <Compile Include="Socket\Core\Command\StringCommandBase.cs" />
+    <Compile Include="Socket\Core\Config\CertificateConfig.cs" />
+    <Compile Include="Socket\Core\Config\CommandAssemblyConfig.cs" />
+    <Compile Include="Socket\Core\Config\ConfigurationSource.cs" />
+    <Compile Include="Socket\Core\Config\ICertificateConfig.cs" />
+    <Compile Include="Socket\Core\Config\ICommandAssemblyConfig.cs" />
+    <Compile Include="Socket\Core\Config\IConfigurationSource.cs" />
+    <Compile Include="Socket\Core\Config\IListenerConfig.cs" />
+    <Compile Include="Socket\Core\Config\IRootConfig.cs" />
+    <Compile Include="Socket\Core\Config\IServerConfig.cs" />
+    <Compile Include="Socket\Core\Config\ITypeProvider.cs" />
+    <Compile Include="Socket\Core\Config\ListenerConfig.cs" />
+    <Compile Include="Socket\Core\Config\RootConfig.cs" />
+    <Compile Include="Socket\Core\Config\ServerConfig.cs" />
+    <Compile Include="Socket\Core\Config\TypeProvider.cs" />
+    <Compile Include="Socket\Core\Config\TypeProviderCollection.cs" />
+    <Compile Include="Socket\Core\Config\TypeProviderConfig.cs" />
+    <Compile Include="Socket\Core\DisplayAttribute.cs" />
+    <Compile Include="Socket\Core\Extensions.cs" />
+    <Compile Include="Socket\Core\IAppServer.cs" />
+    <Compile Include="Socket\Core\IAppSession.cs" />
+    <Compile Include="Socket\Core\IBootstrap.cs" />
+    <Compile Include="Socket\Core\IConnectionFilter.cs" />
+    <Compile Include="Socket\Core\ILoggerProvider.cs" />
+    <Compile Include="Socket\Core\ISessionBase.cs" />
+    <Compile Include="Socket\Core\ISocketServer.cs" />
+    <Compile Include="Socket\Core\ISocketServerFactory.cs" />
+    <Compile Include="Socket\Core\ISocketSession.cs" />
+    <Compile Include="Socket\Core\IsolationMode.cs" />
+    <Compile Include="Socket\Core\IWorkItem.cs" />
+    <Compile Include="Socket\Core\ListenerInfo.cs" />
+    <Compile Include="Socket\Core\LoggerExtension.cs" />
+    <Compile Include="Socket\Core\Logging\ConsoleLog.cs" />
+    <Compile Include="Socket\Core\Logging\ConsoleLogFactory.cs" />
+    <Compile Include="Socket\Core\Logging\ILog.cs" />
+    <Compile Include="Socket\Core\Logging\ILogFactory.cs" />
+    <Compile Include="Socket\Core\Logging\Log4NetLog.cs" />
+    <Compile Include="Socket\Core\Logging\Log4NetLogFactory.cs" />
+    <Compile Include="Socket\Core\Logging\LogFactoryBase.cs" />
+    <Compile Include="Socket\Core\NodeSummary.cs" />
+    <Compile Include="Socket\Core\Protocol\BasicRequestInfoParser.cs" />
+    <Compile Include="Socket\Core\Protocol\BinaryRequestInfo.cs" />
+    <Compile Include="Socket\Core\Protocol\CommandLineReceiveFilterFactory.cs" />
+    <Compile Include="Socket\Core\Protocol\DefaultReceiveFilterFactory.cs" />
+    <Compile Include="Socket\Core\Protocol\FilterState.cs" />
+    <Compile Include="Socket\Core\Protocol\IOffsetAdapter.cs" />
+    <Compile Include="Socket\Core\Protocol\IReceiveFilter.cs" />
+    <Compile Include="Socket\Core\Protocol\IReceiveFilterFactory.cs" />
+    <Compile Include="Socket\Core\Protocol\IReceiveFilterInitializer.cs" />
+    <Compile Include="Socket\Core\Protocol\IRequestInfo.cs" />
+    <Compile Include="Socket\Core\Protocol\IRequestInfoParser.cs" />
+    <Compile Include="Socket\Core\Protocol\ReceiveFilterBase.cs" />
+    <Compile Include="Socket\Core\Protocol\RequestInfo.cs" />
+    <Compile Include="Socket\Core\Protocol\StringRequestInfo.cs" />
+    <Compile Include="Socket\Core\Protocol\TerminatorReceiveFilter.cs" />
+    <Compile Include="Socket\Core\Protocol\TerminatorReceiveFilterFactory.cs" />
+    <Compile Include="Socket\Core\Protocol\UdpRequestInfo.cs" />
+    <Compile Include="Socket\Core\Provider\ExportFactory.cs" />
+    <Compile Include="Socket\Core\Provider\ProviderFactoryInfo.cs" />
+    <Compile Include="Socket\Core\Provider\ProviderKey.cs" />
+    <Compile Include="Socket\Core\RequestHandler.cs" />
+    <Compile Include="Socket\Core\Security\CertificateManager.cs" />
+    <Compile Include="Socket\Core\ServerState.cs" />
+    <Compile Include="Socket\Core\SessionHandler.cs" />
+    <Compile Include="Socket\Core\SocketMode.cs" />
+    <Compile Include="Socket\Engine\AppDomainAppServer.cs" />
+    <Compile Include="Socket\Engine\AppDomainBootstrap.cs" />
+    <Compile Include="Socket\Engine\AssemblyImport.cs" />
+    <Compile Include="Socket\Engine\AsyncSocket\SocketAsyncEventArgsProxy.cs" />
+    <Compile Include="Socket\Engine\AsyncStreamSocketSession.cs" />
+    <Compile Include="Socket\Engine\BootstrapFactory.cs" />
+    <Compile Include="Socket\Engine\Configuration\CertificateConfig.cs" />
+    <Compile Include="Socket\Engine\Configuration\CommandAssembly.cs" />
+    <Compile Include="Socket\Engine\Configuration\Listener.cs" />
+    <Compile Include="Socket\Engine\Configuration\Server.cs" />
+    <Compile Include="Socket\Engine\Configuration\ServerCollection.cs" />
+    <Compile Include="Socket\Engine\Configuration\SocketServiceConfig.cs" />
+    <Compile Include="Socket\Engine\DefaultBootstrap.cs" />
+    <Compile Include="Socket\Engine\IAsyncSocketSession.cs" />
+    <Compile Include="Socket\Engine\ISocketListener.cs" />
+    <Compile Include="Socket\Engine\MarshalAppServer.cs" />
+    <Compile Include="Socket\Engine\PerformanceMonitor.cs" />
+    <Compile Include="Socket\Engine\SocketListenerBase.cs" />
+    <Compile Include="Socket\Engine\SocketServerBase.cs" />
+    <Compile Include="Socket\Engine\SocketServerFactory.cs" />
+    <Compile Include="Socket\Engine\SocketSession.Net.cs" />
+    <Compile Include="Socket\Engine\TcpAsyncSocketListener.cs" />
+    <Compile Include="Socket\Engine\TcpSocketServerBase.cs" />
+    <Compile Include="Socket\Engine\UdpSocketListener.cs" />
+    <Compile Include="Socket\Engine\UdpSocketServer.cs" />
+    <Compile Include="Socket\Engine\UdpSocketSession.cs" />
+    <Compile Include="Socket\Engine\WorkItemFactoryInfo.cs" />
+    <Compile Include="Socket\Engine\WorkItemFactoryInfoLoader.cs" />
+    <Compile Include="Socket\Protocol\IPackageProtocol.cs" />
+    <Compile Include="Socket\SocketServiceContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Socket\StringEncoding.cs" />
+    <Compile Include="WCF\Config\DuplexChannelFactoryObjectDefinitionParser.cs" />
+    <Compile Include="WCF\DuplexChannelFactoryObject.cs" />
+    <Compile Include="WCF\ChannelFactoryObject.cs" />
+    <Compile Include="WCF\Config\ChannelFactoryObjectDefinitionParser.cs" />
+    <Compile Include="WCF\Config\WcfNamespaceParser.cs" />
+    <Compile Include="WCF\GlobalParams.cs" />
+    <Compile Include="WCF\ServiceContractNotFoundException.cs" />
+    <Compile Include="WCF\WCFHostException.cs" />
+    <Compile Include="WCF\WCFMateHelper.cs" />
+    <Compile Include="WCF\WCFService.cs" />
+    <Compile Include="WCF\WCFServiceContainer.cs" />
+    <Compile Include="WCF\WCFServiceCreateException.cs" />
+    <Compile Include="WCF\WCFServiceMeta.cs" />
+    <Compile Include="WCF\WCFServiceMetaException.cs" />
+    <Compile Include="WCF\BindingNotFoundException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mail\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WCF\Config\DS.AFP.Communication.wcf.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="DSNETCTRLLib">
+      <Guid>{6C8D4BD2-07AA-46E7-8B9E-95C5088AAFD5}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DS.AFP.Common.Core\DS.AFP.Common.Core.csproj">
+      <Project>{519f7ad2-ae87-4d5c-aaa1-7f69635581b8}</Project>
+      <Name>DS.AFP.Common.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WCF\Config\DS.AFP.Communication.wcf2.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Rest\Config\DS.AFP.Communication.rest.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

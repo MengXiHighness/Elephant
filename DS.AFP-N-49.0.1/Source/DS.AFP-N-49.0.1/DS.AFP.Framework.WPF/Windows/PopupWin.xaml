@@ -1,0 +1,31 @@
+﻿<dsw:WindowBase x:Class="DS.AFP.Framework.WPF.PopuWin"
+        xmlns:dsw="clr-namespace:DS.AFP.Framework.WPF" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UserControlWindow"  
+        WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent" BorderThickness="40">
+    <Window.Effect><!--WindowStyle="None" AllowsTransparency="True"-->
+        <DropShadowEffect Color="#FF040000" Opacity="0.6" BlurRadius="40"/>
+    </Window.Effect>
+    <Border BorderThickness="1" Width="Auto"  Height="Auto"  MouseLeftButtonDown="BackGround_MouseMove"  Margin="0,0,0,0" Background="White" BorderBrush="Black" CornerRadius="0"  >
+        <DockPanel LastChildFill="True">
+            <Grid DockPanel.Dock="Top" Width="Auto" Height="30" Style="{DynamicResource TitlebgStyle}" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0"  Name="DS_AFP_Title" Margin="5,0,0,0" Style="{DynamicResource DS_AFP_TitleStyle}" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <!--<Button Grid.Column="2" x:Name="MinButton"  Width="16" Height="16" HorizontalAlignment="Right" Margin="0,2,55,0" Click="btnMin_Click" Template="{StaticResource MiniButton}" />
+                <Button Grid.Column="2" x:Name="MaxButton"  Width="16" Height="16" HorizontalAlignment="Right" Margin="0,2,30,0" Click="btnMax_Click" Style="{StaticResource WinNormalButton}" />-->
+                <Button Grid.Column="2" x:Name="CloseButton"  Width="16" Height="16" HorizontalAlignment="Right" Margin="0,2,5,0" Click="btnClose_Click" Style="{DynamicResource CloseButton}" />
+            </Grid>
+            <StackPanel DockPanel.Dock="Bottom" MinHeight="20" Style="{DynamicResource StatuBarStyle}">   
+            </StackPanel>
+            <Border MinHeight="100" MinWidth="100" BorderThickness="1" Margin="2">
+                <ContentControl x:Name="DS_AFP_UserContent" Width="Auto" Height="Auto">
+                </ContentControl>
+            </Border>
+        </DockPanel>
+    </Border>
+</dsw:WindowBase>

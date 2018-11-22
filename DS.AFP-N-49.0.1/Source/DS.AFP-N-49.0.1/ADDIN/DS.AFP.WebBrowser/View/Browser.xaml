@@ -1,0 +1,15 @@
+﻿<UserControl xmlns:my="http://www.dscomm.com/ds/afp/dsct"  x:Class="DS.AFP.WebBrowser.Browser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DS.AFP.WebBrowser"
+             xmlns:my1="http://www.dscomm.com/ds/afp/dsct/"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        
+        <my:WebBrowser Name="browser" />
+        
+    </Grid>
+</UserControl>

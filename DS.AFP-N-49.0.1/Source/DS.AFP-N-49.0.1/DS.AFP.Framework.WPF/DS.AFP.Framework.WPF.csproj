@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F602B278-3226-4EF8-AA02-CB2962158914}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DS.AFP.Framework.WPF</RootNamespace>
+    <AssemblyName>DS.AFP.Framework.WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DS.Common.Logging, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Log4net\V1.0\DS.Common.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\Bin\BizApp\DS_AFP-N\Libs\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Spring.Core, Version=1.3.2.40001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Spring.net\V1.0\Spring.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AttachedWindow.cs" />
+    <Compile Include="Controls\Browser\EventSignal\Event.cs" />
+    <Compile Include="Controls\ImageControl\GifImage.cs" />
+    <Compile Include="Controls\IView.cs" />
+    <Compile Include="Controls\UserControlBase.cs" />
+    <Compile Include="Controls\UserControl\ViewBase.cs" />
+    <Compile Include="Controls\UserControl\ViewParameters.cs" />
+    <Compile Include="Controls\WindowStyleBase.cs" />
+    <Compile Include="GlobalParams.cs" />
+    <Compile Include="IShell.cs" />
+    <Compile Include="LoadModuleEvent.cs" />
+    <Compile Include="Localization\CultureManager.cs" />
+    <Compile Include="Localization\ManagedMarkupExtension.cs" />
+    <Compile Include="Localization\MarkupExtensionManager.cs" />
+    <Compile Include="Localization\ResourceEnumConverter.cs" />
+    <Compile Include="Localization\ResxExtension.cs" />
+    <Compile Include="Localization\UICultureExtension.cs" />
+    <Compile Include="Notifications\INotifiaction.cs" />
+    <Compile Include="Notifications\Notification.cs" />
+    <Compile Include="Portal\IPortal.cs" />
+    <Compile Include="Portal\Navigation.cs" />
+    <Compile Include="Portal\Portal.cs" />
+    <Compile Include="Portal\ToolBar.cs" />
+    <Compile Include="Portal\ToolBarItem.cs" />
+    <Compile Include="Portal\NavigationItem.cs" />
+    <Compile Include="Portal\StatusBar.cs" />
+    <Compile Include="Portal\StatusDataItem.cs" />
+    <Compile Include="Resource\IResourceProvider.cs" />
+    <Compile Include="Resource\ResourceManager.cs" />
+    <Compile Include="Resource\XmlProvider.cs" />
+    <Compile Include="ThemeManage.cs" />
+    <Compile Include="User\DeskInfo.cs" />
+    <Compile Include="User\OrganizationInfo.cs" />
+    <Compile Include="User\Role.cs" />
+    <Compile Include="User\UserStore.cs" />
+    <Compile Include="ViewModel\ErrorsContainer.cs" />
+    <Compile Include="ViewModel\PropertySupport.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="Controls\WindowBase.cs" />
+    <Compile Include="Windows\AlterWin.xaml.cs">
+      <DependentUpon>AlterWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AlterWindow.xaml.cs">
+      <DependentUpon>AlterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ConfirmWin.xaml.cs">
+      <DependentUpon>ConfirmWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DialogActivationBehavior.cs" />
+    <Compile Include="Windows\DsWindow.xaml.cs">
+      <DependentUpon>DsWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\IWindow.cs" />
+    <Compile Include="Windows\OverlayEvent.cs" />
+    <Compile Include="Windows\PopupWindow\WindowRegionAdapter.cs" />
+    <Compile Include="Windows\RegionPopupBehaviors.cs" />
+    <Compile Include="Windows\PopupWin.xaml.cs">
+      <DependentUpon>PopupWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowDialogActivationBehavior.Desktop.cs" />
+    <Compile Include="Windows\WindowWrapper.Desktop.cs" />
+    <Compile Include="WPFBootstrapper.cs" />
+    <Compile Include="Commands\ButtonBaseClickCommandBehavior.cs" />
+    <Compile Include="Commands\Click.cs" />
+    <Compile Include="Commands\CommandBehaviorBase.cs" />
+    <Compile Include="Commands\CompositeCommand.cs" />
+    <Compile Include="Commands\DelegateCommand.cs" />
+    <Compile Include="Commands\DelegateCommandBase.cs" />
+    <Compile Include="Commands\WeakEventHandlerManager.Desktop.cs" />
+    <Compile Include="IActiveAware.cs" />
+    <Compile Include="ObservableObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regions\AllActiveRegion.cs" />
+    <Compile Include="Regions\Behaviors\AutoPopulateRegionBehavior.cs" />
+    <Compile Include="Regions\Behaviors\BindRegionContextToDependencyObjectBehavior.cs" />
+    <Compile Include="Regions\Behaviors\ClearChildViewsRegionBehavior.cs" />
+    <Compile Include="Regions\Behaviors\DelayedRegionCreationBehavior.cs" />
+    <Compile Include="Regions\Behaviors\IHostAwareRegionBehavior.cs" />
+    <Compile Include="Regions\Behaviors\RegionActiveAwareBehavior.cs" />
+    <Compile Include="Regions\Behaviors\RegionCreationException.cs" />
+    <Compile Include="Regions\Behaviors\RegionCreationException.Desktop.cs" />
+    <Compile Include="Regions\Behaviors\RegionManagerRegistrationBehavior.cs" />
+    <Compile Include="Regions\Behaviors\RegionMemberLifetimeBehavior.cs" />
+    <Compile Include="Regions\Behaviors\SelectorItemsSourceSyncBehavior.cs" />
+    <Compile Include="Regions\Behaviors\SyncRegionContextWithHostBehavior.cs" />
+    <Compile Include="Regions\ContentControlRegionAdapter.cs" />
+    <Compile Include="Regions\DefaultRegionManagerAccessor.cs" />
+    <Compile Include="Regions\IConfirmNavigationRequest.cs" />
+    <Compile Include="Regions\INavigateAsync.cs" />
+    <Compile Include="Regions\INavigationAware.cs" />
+    <Compile Include="Regions\IRegion.cs" />
+    <Compile Include="Regions\IRegionAdapter.cs" />
+    <Compile Include="Regions\IRegionBehavior.cs" />
+    <Compile Include="Regions\IRegionBehaviorCollection.cs" />
+    <Compile Include="Regions\IRegionBehaviorFactory.cs" />
+    <Compile Include="Regions\IRegionCollection.cs" />
+    <Compile Include="Regions\IRegionManager.cs" />
+    <Compile Include="Regions\IRegionManagerAccessor.cs" />
+    <Compile Include="Regions\IRegionMemberLifetime.cs" />
+    <Compile Include="Regions\IRegionNavigationContentLoader.cs" />
+    <Compile Include="Regions\IRegionNavigationJournal.cs" />
+    <Compile Include="Regions\IRegionNavigationJournalEntry.cs" />
+    <Compile Include="Regions\IRegionNavigationService.cs" />
+    <Compile Include="Regions\IRegionViewRegistry.cs" />
+    <Compile Include="Regions\ItemMetadata.cs" />
+    <Compile Include="Regions\ItemsControlRegionAdapter.cs" />
+    <Compile Include="Regions\IViewsCollection.cs" />
+    <Compile Include="Regions\NavigationAsyncExtensions.cs" />
+    <Compile Include="Regions\NavigationContext.cs" />
+    <Compile Include="Regions\NavigationExtensions.cs" />
+    <Compile Include="Regions\NavigationParameters.cs" />
+    <Compile Include="Regions\NavigationResult.cs" />
+    <Compile Include="Regions\Region.cs" />
+    <Compile Include="Regions\RegionAdapterBase.cs" />
+    <Compile Include="Regions\RegionAdapterMappings.cs" />
+    <Compile Include="Regions\RegionBehavior.cs" />
+    <Compile Include="Regions\RegionBehaviorCollection.cs" />
+    <Compile Include="Regions\RegionBehaviorFactory.cs" />
+    <Compile Include="Regions\RegionContext.cs" />
+    <Compile Include="Regions\RegionManager.cs" />
+    <Compile Include="Regions\RegionManagerExtensions.cs" />
+    <Compile Include="Regions\RegionMemberLifetimeAttribute.cs" />
+    <Compile Include="Regions\RegionNavigationContentLoader.cs" />
+    <Compile Include="Regions\RegionNavigationEventArgs.cs" />
+    <Compile Include="Regions\RegionNavigationFailedEventArgs.cs" />
+    <Compile Include="Regions\RegionNavigationJournal.cs" />
+    <Compile Include="Regions\RegionNavigationJournalEntry.cs" />
+    <Compile Include="Regions\RegionNavigationService.cs" />
+    <Compile Include="Regions\RegionViewRegistry.cs" />
+    <Compile Include="Regions\SelectorRegionAdapter.cs" />
+    <Compile Include="Regions\SingleActiveRegion.cs" />
+    <Compile Include="Regions\SyncActiveStateAttribute.cs" />
+    <Compile Include="Regions\UpdateRegionsException.cs" />
+    <Compile Include="Regions\UpdateRegionsException.Desktop.cs" />
+    <Compile Include="Regions\ViewRegisteredEventArgs.cs" />
+    <Compile Include="Regions\ViewRegistrationException.cs" />
+    <Compile Include="Regions\ViewRegistrationException.Desktop.cs" />
+    <Compile Include="Regions\ViewsCollection.cs" />
+    <Compile Include="Regions\ViewsCollection.Desktop.cs" />
+    <Compile Include="Regions\ViewSortHintAttribute.cs" />
+    <Compile Include="UriParsingHelper.cs" />
+    <Compile Include="UriQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Windows\AlterWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AlterWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ConfirmWin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\DsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PopupWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Windows\Resources\Images\gantanhao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DS.AFP.Common.Core\DS.AFP.Common.Core.csproj">
+      <Project>{519f7ad2-ae87-4d5c-aaa1-7f69635581b8}</Project>
+      <Name>DS.AFP.Common.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DS.AFP.Framework.Spring\DS.AFP.Framework.Spring.csproj">
+      <Project>{4182584b-3233-4b2d-8697-7f385aefa1de}</Project>
+      <Name>DS.AFP.Framework.Spring</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DS.AFP.Framework\DS.AFP.Framework.csproj">
+      <Project>{ec41ed64-6769-4fe8-acd8-6255bca3491c}</Project>
+      <Name>DS.AFP.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

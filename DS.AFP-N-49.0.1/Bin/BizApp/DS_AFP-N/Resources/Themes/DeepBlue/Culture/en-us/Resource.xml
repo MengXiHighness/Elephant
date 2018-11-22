@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res>
+    <item key="logo.png" type="image"  des="这是注释" value="\Images\logo.png"/>
+    <item key="dslogo.png" type="image"  des="这是注释" value="\Images\dslogo.png"/>
+    <item key="短信查询" type="string"  des="这是注释" value="SMS Query"/>
+</res>

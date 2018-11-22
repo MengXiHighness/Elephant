@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res>
+  <item key="sysName" type="string"  des="sysName" value="DS Converged Terminals"/>
+  <item key="version" type="string"  des="version" value="v 1.0.0"/>
+  
+  <item key="Close" type="string"  des="Close" value="Close"/>
+  <item key="About" type="string"  des="About" value="About"/>
+</res>

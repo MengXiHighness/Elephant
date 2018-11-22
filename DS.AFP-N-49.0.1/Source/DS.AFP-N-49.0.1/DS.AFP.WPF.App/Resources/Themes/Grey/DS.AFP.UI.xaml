@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ig="http://schemas.infragistics.com/xaml"
+                    >
+    <Style x:Key="headIconLeftStyle" TargetType="{x:Type Grid}"> 
+        <Setter Property="Background"  >
+            <Setter.Value>
+                <ImageBrush  Stretch="Fill" ImageSource="/DS.AFP.WPF.App;component/Resources/Themes/Grey/Images/headIconLeft.png" ></ImageBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="headIconCenterStyle" TargetType="{x:Type Grid}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush  Stretch="Fill" ImageSource="/DS.AFP.WPF.App;component/Resources/Themes/Grey/Images/headIconCenter.png" ></ImageBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="headIconRightStyle" TargetType="{x:Type Grid}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush  Stretch="Fill" ImageSource="/DS.AFP.WPF.App;component/Resources/Themes/Grey/Images/headIconRight.png" ></ImageBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="footStyle" TargetType="{x:Type Grid}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush  Stretch="Fill" ImageSource="/DS.AFP.WPF.App;component/Resources/Themes/Grey/Images/foot.png" ></ImageBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="XamMenuStyle" TargetType="{x:Type ig:XamMenu}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush  Stretch="Fill" ImageSource="/DS.AFP.WPF.App;component/Resources/Themes/Grey/Images/XamMenu.png" ></ImageBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="XamMenuItemStyle" TargetType="{x:Type ig:XamMenuItem}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush  Stretch="Fill" ImageSource="/DS.AFP.WPF.App;component/Resources/Themes/Grey/Images/XamMenuItem.png" ></ImageBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

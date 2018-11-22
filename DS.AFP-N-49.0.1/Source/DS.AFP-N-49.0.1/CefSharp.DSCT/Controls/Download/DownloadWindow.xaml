@@ -1,0 +1,35 @@
+﻿<Window x:Class="CefSharp.DSCT.DownloadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"       
+        mc:Ignorable="d"
+        Title="{Binding FileName}" Height="150" Width="300" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="68"/>
+            <ColumnDefinition Width="107"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Name="img"  UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="images/download.png"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" TextTrimming="CharacterEllipsis" Width="107" HorizontalAlignment="Left" Text="{Binding FileName}"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" TextTrimming="CharacterEllipsis" Width="150" HorizontalAlignment="Left" Text="{Binding FullPath}" Grid.ColumnSpan="2"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Right" Text="{Binding Percentage}"/>
+        <ProgressBar Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Height="4" Background="Red" Value="{Binding NewValue}" Foreground="#FF13D837" Margin="0,8"  />
+
+
+    </Grid>
+</Window>

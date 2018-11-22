@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC41ED64-6769-4FE8-ACD8-6255BCA3491C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DS.AFP.Framework</RootNamespace>
+    <AssemblyName>DS.AFP.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\BizApp\DS_AFP-N\DS.AFP.Libs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DS.Common.Logging, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DS.AFP.Lib\Log4net\V1.0\DS.Common.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\Bin\BizApp\DS_AFP-N\Libs\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Events\BackgroundEventSubscription.cs" />
+    <Compile Include="Events\CompositePresentationEvent.cs" />
+    <Compile Include="Events\DataEventArgs.cs" />
+    <Compile Include="Events\DefaultDispatcher.Desktop.cs" />
+    <Compile Include="Events\DelegateReference.cs" />
+    <Compile Include="Events\DispatcherEventSubscription.cs" />
+    <Compile Include="Events\EventAggregator.cs" />
+    <Compile Include="Events\EventBase.cs" />
+    <Compile Include="Events\EventSubscription.cs" />
+    <Compile Include="Events\IDelegateReference.cs" />
+    <Compile Include="Events\IDispatcherFacade.cs" />
+    <Compile Include="Events\IEventAggregator.cs" />
+    <Compile Include="Events\IEventSubscription.cs" />
+    <Compile Include="Events\SubscriptionToken.cs" />
+    <Compile Include="Events\ThreadOption.cs" />
+    <Compile Include="Events\WeakDelegatesManager.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="ListDictionary.cs" />
+    <Compile Include="Message\BackgroundMsgSubscription.cs" />
+    <Compile Include="Message\DefaultDispatcher.cs" />
+    <Compile Include="Message\DelegateReference.cs" />
+    <Compile Include="Message\DispatcherMsgSubscription.cs" />
+    <Compile Include="Message\IDelegateReference.cs" />
+    <Compile Include="Message\IDispatcherFacade.cs" />
+    <Compile Include="Message\IDS21Message.cs" />
+    <Compile Include="Message\IMsgSubscription.cs" />
+    <Compile Include="Message\DS21Message.cs" />
+    <Compile Include="Message\IReceiveResolver.cs" />
+    <Compile Include="Message\ISendResolver.cs" />
+    <Compile Include="Message\MessageEnvelope.cs" />
+    <Compile Include="Message\MessageSender.cs" />
+    <Compile Include="Message\MsgBase.cs" />
+    <Compile Include="Message\MsgEnvelope.cs" />
+    <Compile Include="Message\MsgSubscription.cs" />
+    <Compile Include="Message\OldStringFormartSubscribe.cs" />
+    <Compile Include="Message\SubscriptionToken.cs" />
+    <Compile Include="Message\ThreadOption.cs" />
+    <Compile Include="Message\XmlFormartSubscribe.cs" />
+    <Compile Include="Modularity\AssemblyResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ConfigurationModuleCatalog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ConfigurationStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\CyclicDependencyFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\CyclicDependencyFoundException.Extension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\DirectoryModuleCatalog.Extension.cs" />
+    <Compile Include="Modularity\DuplicateModuleException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\DuplicateModuleException.Extension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\FileDirectoryModuleCatalog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\FileModuleTypeLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\IAssemblyResolver.cs" />
+    <Compile Include="Modularity\IConfigurationStore.cs" />
+    <Compile Include="Modularity\IModule.cs" />
+    <Compile Include="Modularity\IModuleCatalog.cs" />
+    <Compile Include="Modularity\IModuleCatalogItem.cs" />
+    <Compile Include="Modularity\IModuleInitializer.cs" />
+    <Compile Include="Modularity\IModuleManager.cs" />
+    <Compile Include="Modularity\IModuleTypeLoader.cs" />
+    <Compile Include="Modularity\InitializationMode.cs" />
+    <Compile Include="Modularity\LoadModuleCompletedEventArgs.cs" />
+    <Compile Include="Modularity\ModuleAssemblyLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleAttribute.Desktop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleCatalog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleDependencyAttribute.Desktop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleDependencySolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleDownloadProgressChangedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleInfo.Extension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleInfoGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleInfoGroupExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleInitializeException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleInitializeException.Desktop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleInitializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleNotFoundException.Desktop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleTypeLoaderNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleTypeLoaderNotFoundException.Desktop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleTypeLoadingException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modularity\ModuleTypeLoadingException.Desktop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DS.AFP.Common.Core\DS.AFP.Common.Core.csproj">
+      <Project>{519f7ad2-ae87-4d5c-aaa1-7f69635581b8}</Project>
+      <Name>DS.AFP.Common.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DS.AFP.Communication\DS.AFP.Communication.csproj">
+      <Project>{0c2aec49-e6a2-4615-83a5-1f10bc47769b}</Project>
+      <Name>DS.AFP.Communication</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

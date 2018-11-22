@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+
+    <script src="ds.afp.browser.common.js"></script>
+    <script src="ds.videoplayer.js"></script>
+</head>
+<body>
+    <h1>TypeScript HTML App</h1>
+
+    <div id="content"></div>
+
+    <script>
+        //var a = null;
+        //var b;
+
+        //if (typeof a != "undefined") {
+        //    alert("a is defined")
+        //} else {
+        //    alert("a is undefined")
+        //}
+
+        //if (typeof b != "undefined") {
+        //    alert("b is defined")
+        //} else {
+        //    alert("b is undefined")
+        //}
+
+        //if (typeof c != "undefined") {
+        //    alert("c is defined")
+        //} else {
+        //    alert("c is undefined")
+        //}
+
+
+        var a = dsExt.getObject("ds.afp.common")
+        alert(a.getTestData());
+        alert(dsExt.getGuid());
+    </script>
+</body>
+</html>
